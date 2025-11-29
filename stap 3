@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini Escape - Finale</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Stap 3 – De laatste code</h2>
+<p>Voer de juiste code in om mijn motivatie te ontdekken:</p>
+
+<input type="text" id="finalCode" placeholder="Vul code in">
+<br>
+<button onclick="checkFinal()">Verstuur</button>
+
+<p id="feedback"></p>
+
+<script>
+function checkFinal() {
+    var input = document.getElementById("finalCode").value.trim();
+    if(input === "473") {
+        window.location.href = "finale.html";
+    } else {
+        document.getElementById("feedback").innerHTML = "Nog niet goed. Kijk goed naar de hints!";
+    }
+}
+</script>
+
+</body>
+</html>
