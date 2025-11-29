@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini Escape - Stap 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Stap 2 – Kies het juiste pad</h2>
+<p>Kies het woord dat niet bij de andere twee past:</p>
+
+<button onclick="checkAnswer('Sleutel')">Sleutel</button>
+<button onclick="checkAnswer('Slot')">Slot</button>
+<button onclick="checkAnswer('Licht')">Licht</button>
+
+<p id="feedback"></p>
+
+<script>
+function checkAnswer(choice) {
+    if(choice === "Licht") {
+        window.location.href = "stap3.html";
+    } else {
+        document.getElementById("feedback").innerHTML = "Niet correct. Denk logisch en probeer het nog eens.";
+    }
+}
+</script>
+
+</body>
+</html>
